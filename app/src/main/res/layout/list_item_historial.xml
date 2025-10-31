@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvTipoHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Hábito"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTipoHabito"
+        android:text="2025-10-30"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvCo2Ahorrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+500.0 g CO2"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"/>
+
+</RelativeLayout>

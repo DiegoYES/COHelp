@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi Progreso Sostenible"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CO2 Ahorrado Hoy"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvCo2Hoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 g"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progreso Semanal"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartSemanal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnRegistrarHabito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Hábito" />
+
+        <Button
+            android:id="@+id/btnVerHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Historial"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnVerDesafios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Desafíos"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
