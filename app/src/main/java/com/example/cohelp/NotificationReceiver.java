@@ -38,7 +38,7 @@ public class NotificationReceiver extends BroadcastReceiver {
     }
 
     private void mostrarNotificacion(Context context) {
-        // Intent para abrir MainActivity al hacer clic
+       
         Intent intent = new Intent(context, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE);
@@ -53,10 +53,9 @@ public class NotificationReceiver extends BroadcastReceiver {
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
 
-        // Permiso de notificación (necesario para API 33+)
+        
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-            // Sin permiso, no podemos mostrar la notificación
-            // (Para un proyecto real, pedirías el permiso en MainActivity)
+           
             return;
         }
 
