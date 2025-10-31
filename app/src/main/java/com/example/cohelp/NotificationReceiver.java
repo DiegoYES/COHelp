@@ -44,7 +44,7 @@ public class NotificationReceiver extends BroadcastReceiver {
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_launcher_foreground) // ¡Asegúrate de tener este ícono!
+                .setSmallIcon(R.drawable.ic_launcher_foreground) 
                 .setContentTitle("Recordatorio Sostenible")
                 .setContentText("¡No olvides registrar tus hábitos ecológicos de hoy!")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
