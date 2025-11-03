@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4C3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DDC35E"
+        android:backgroundTint="#DFF5E1"
+        android:fontFamily="monospace"
+        android:text="Mi Progreso Sostenible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textColorLink="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CO2 Ahorrado Hoy"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCo2Hoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 g"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Progreso Semanal"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartSemanal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegistrarHabito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Hábito" />
+
+        <Button
+            android:id="@+id/btnVerHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ver Historial" />
+
+        <Button
+            android:id="@+id/btnVerDesafios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ver Desafíos" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB8484"
+    android:orientation="vertical"
+    tools:context=".DesafiosActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0FFF4FF"
+        android:backgroundTint="#E0FFF4FF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Desafíos Ecológicos"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvDesafios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F4C3" />
+</LinearLayout>
